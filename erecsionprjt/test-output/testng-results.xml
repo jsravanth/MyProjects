@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="97209" started-at="2019-02-20T11:03:00Z" finished-at="2019-02-20T11:04:37Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="97209" started-at="2019-02-20T11:03:00Z" finished-at="2019-02-20T11:04:37Z">
+      <class name="script.AddPermissionsToGroupTC_05">
+        <test-method status="PASS" signature="preConfig()[pri:0, instance:script.AddPermissionsToGroupTC_05@52feb982]" name="preConfig" is-config="true" duration-ms="45030" started-at="2019-02-20T11:03:00Z" finished-at="2019-02-20T11:03:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preConfig -->
+        <test-method status="PASS" signature="testAddPermissionsToGroupTC_05()[pri:0, instance:script.AddPermissionsToGroupTC_05@52feb982]" name="testAddPermissionsToGroupTC_05" duration-ms="46562" started-at="2019-02-20T11:03:45Z" finished-at="2019-02-20T11:04:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddPermissionsToGroupTC_05 -->
+        <test-method status="PASS" signature="postConfig()[pri:0, instance:script.AddPermissionsToGroupTC_05@52feb982]" name="postConfig" is-config="true" duration-ms="5484" started-at="2019-02-20T11:04:32Z" finished-at="2019-02-20T11:04:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postConfig -->
+      </class> <!-- script.AddPermissionsToGroupTC_05 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
