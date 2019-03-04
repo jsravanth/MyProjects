@@ -5,12 +5,13 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
+import org.testng.annotations.AfterMethod;
+
+import org.testng.annotations.BeforeMethod;
 
 abstract public class SuperTestScript {
 	public static WebDriver driver;
-	@BeforeTest
+	@BeforeMethod
 	public void preConfig()
 	{
 		String url = ExcelOperation.readData("preconfig", 1, 2);
@@ -34,7 +35,7 @@ abstract public class SuperTestScript {
 		driver.get(url);
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	}
-	@AfterTest
+	@AfterMethod
 	public void postConfig()
 	{
 		driver.quit();

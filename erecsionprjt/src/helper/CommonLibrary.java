@@ -1,7 +1,13 @@
 package helper;
 
+import java.io.File;
+import java.io.IOException;
+
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.Alert;
+import org.openqa.selenium.OutputType;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.events.EventFiringWebDriver;
 import org.openqa.selenium.support.ui.Select;
 
 public class CommonLibrary {
@@ -44,7 +50,14 @@ public class CommonLibrary {
 		return a3.getText();
 	}
 	
-	
+	public static void takeScreenshot(String ScreenshotName) throws IOException
+	{
+		EventFiringWebDriver efw=new EventFiringWebDriver(SuperTestScript.driver);
+		File f1=efw.getScreenshotAs(OutputType.FILE);
+		File f2=new File("D:\\java\\TCCA5\\ScreenShorts\\"+ScreenshotName+".jpg");
+		FileUtils.moveFile(f1, f2);
+
+	}
 	
 	
 	
