@@ -8,7 +8,8 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterMethod;
 
 import org.testng.annotations.BeforeMethod;
-
+import org.testng.annotations.Listeners;
+@Listeners(FrameworkListner.class)
 abstract public class SuperTestScript {
 	public static WebDriver driver;
 	@BeforeMethod
